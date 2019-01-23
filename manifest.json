@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Manga Download",
+  "author": "Paul Gaumer",
+  "version": "1",
+  "description": "Auto download mangas",
+  "icons": {},
+  "content_scripts": [
+    {
+      "matches": ["*://sakurafile.com/*"],
+      "js": ["manga_download.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["<all_urls>"]
+}
